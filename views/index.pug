@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .navbar
+    .navbar-brand
+      a(href='/')
+        img(src='/assets/images/logo.png')
+    .navbar-collapse
+      ul.nav.navbar-nav
+        li.active
+          a(href='/') Home
+        li
+          a(href='/about') About
+        li
+          a(href='/contact') Contact
+        li
+          a(href='/login') Login
+        li
+          a(href='/register') Register
+  h1= title
+  p Welcome to #{title}
